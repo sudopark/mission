@@ -7,3 +7,7 @@
 # Python artifacts from hooks and scripts
 __pycache__/
 *.pyc
+
+# Local upstream sync workflow (kept out of the plugin)
+CLAUDE.local.md
+UPSTREAM.md
