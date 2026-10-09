@@ -11,3 +11,6 @@ __pycache__/
 # Local upstream sync workflow (kept out of the plugin)
 CLAUDE.local.md
 UPSTREAM.md
+
+# Local Korean translations for review
+ko/
