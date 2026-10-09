@@ -1,6 +1,11 @@
 {
   "name": "mission",
-  "owner": { "name": "sudo.park" },
+  "owner": {
+    "name": "sudo.park"
+  },
+  "metadata": {
+    "description": "A plan-and-order harness plugin: work instructions, campaign plans, release plans, and their reporting contracts."
+  },
   "plugins": [
     {
       "name": "mission",
