@@ -14,3 +14,6 @@ UPSTREAM.md
 
 # Local Korean translations for review
 ko/
+
+# Local design docs tied to the upstream migration
+docs/superpowers/
