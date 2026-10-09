@@ -7,6 +7,10 @@ TodoCalendar 의 계획–명령 체계 하네스(작업 지침·캠페인 계�
 - **무엇을 옮기고 무엇을 남기나** — [sudopark/TodoCalendar#1098](https://github.com/sudopark/TodoCalendar/issues/1098) 본문이다. 이관 대상·분리가 필요한 스킬·함께 옮길 후보·선결 과제·미정이 여기 있다. 이 레포에서 경계를 새로 정하면 #1098 본문도 같이 고친다 — 두 레포의 세션이 같은 경계를 보는 자리가 그 본문 하나뿐이다.
 - **옮길 실물** — 로컬 `~/Documents/codebase/TodoCalendar` 의 `origin/develop` 이다. 작업 트리가 아니라 `git show origin/develop:<경로>` 로 읽는다. 작업 트리에는 다른 세션이 커밋하지 않은 변경이 섞여 있을 수 있다.
 
+## 커밋
+
+커밋 메시지는 영어로 쓴다. 제목·본문·불릿 모두 해당한다.
+
 ## 처음 한 번 — 초기 이관
 
 1. `git init` 하고 plugin 골격을 만든다: `.claude-plugin/plugin.json`(name `mission`), `.claude-plugin/marketplace.json`(plugin source `./`), `skills/`, `README.md`.
