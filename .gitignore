@@ -1,9 +1,9 @@
 .DS_Store
 ._*
 
-# Claude Code 로컬 전용 설정
+# Claude Code local-only settings
 .claude/settings.local.json
 
-# 훅·스크립트(Python) 실행 산출물
+# Python artifacts from hooks and scripts
 __pycache__/
 *.pyc

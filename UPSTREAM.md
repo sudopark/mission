@@ -1,8 +1,8 @@
-# UPSTREAM — TodoCalendar 동기화 기록
+# UPSTREAM — TodoCalendar sync log
 
-기준점: 없음 (초기 이관 전)
+Baseline: none (before initial migration)
 
-절차는 `CLAUDE.md` §매 세션 시작 — 동기화.
+Procedure: `CLAUDE.md` § Every session start — sync.
 
-| TodoCalendar 커밋 | 판정 | 사유 |
+| TodoCalendar commit | Verdict | Reason |
 |---|---|---|
