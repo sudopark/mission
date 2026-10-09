@@ -70,4 +70,5 @@ The plugin never names a host project or invokes host scripts. What it needs fro
 | [Extension points](docs/extension-points.md#extension-points) | Skills declare three events (`skill-end`, `progress-updated`, `report-posted`). The host may attach hooks; unattached events do nothing. |
 | [Report posting](docs/extension-points.md#report-posting) | Reports go out through a channel that notifies the user. The default is a plain issue comment. |
 | [Runtime environment](docs/extension-points.md#runtime-environment) | Only `control-brief` needs session-to-session messaging. Other skills run without it. |
+| [Workflow skills](docs/extension-points.md#workflow-skills) | Planning skills reference host-provided intake, execution, issue-conventions, pr, and (optionally) orchestration skills. Each has a fallback when absent. |
 | [Operations directory](docs/extension-points.md#host-artifacts) | Plan and progress files live in one host directory (default location and override are defined in the linked document). The host should gitignore it. |

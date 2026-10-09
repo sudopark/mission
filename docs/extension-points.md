@@ -51,3 +51,15 @@ Plan and progress files are host artifacts. They live in one directory inside th
 These files are working files, not committed history, so the host is expected to gitignore the directory. Skills refer to it as "the operations directory" and resolve the actual path from the host's configuration, falling back to the default.
 
 Plugin assets such as templates are separate. Skills reference them as `${CLAUDE_PLUGIN_ROOT}/templates/<name>.md`, never through a host repository path.
+
+## Workflow skills
+
+Planning skills hand off to workflow skills that the host provides. The plugin does not ship them in this stage; a later stage ships defaults for intake, execution, and issue conventions. Each is optional, and every skill names the fallback below when the host has none.
+
+| Workflow skill | Role | When absent |
+| --- | --- | --- |
+| Intake | Receives an issue and seeds the pre-research brief and the progress file. | The user starts the planning skill directly, and the skill proceeds from the issue body. |
+| Execution skill (for example, an implement skill) | Carries the execution reporting duties and the gap-report loop. | The executor follows the reporting contract by hand. |
+| Issue conventions | Define the body mirror and the comment protocol. | The skill posts plain comments and keeps the local files authoritative. |
+| PR skill | Owns the `in review` and `closed` transitions, invokes campaign evaluation mode after a DP merge, and on a revert moves the DP to `regressed` and posts the immediate report. | The user performs these transitions and posts the report. |
+| Orchestration skill (optional) | A session mode that runs DPs back to back. | Nothing is required, except that the campaign skill winds an in-flight run down into the ledger. |
