@@ -1,6 +1,6 @@
 # mission
 
-TodoCalendar 의 계획–명령 체계 하네스(작업 지침·캠페인 계획·릴리즈 계획과 그 보고 계약)를 떼어 낸 Claude Code plugin 이다. 레포 하나에 plugin 하나만 싣고, 루트의 `.claude-plugin/marketplace.json` 이 이 레포 자신을 가리킨다. GitHub 레포(`sudopark/mission`)는 아직 없고 로컬에서 먼저 만든다. 첫 설치처는 새로 시작할 프로젝트다.
+TodoCalendar 의 계획–명령 체계 하네스(작업 지침·캠페인 계획·릴리즈 계획과 그 보고 계약)를 떼어 낸 Claude Code plugin 이다. 레포 하나에 plugin 하나만 싣고, 루트의 `.claude-plugin/marketplace.json` 이 이 레포 자신을 가리킨다. GitHub 레포는 [sudopark/mission](https://github.com/sudopark/mission) 이고 기본 브랜치는 `main` 이다. 첫 설치처는 새로 시작할 프로젝트다.
 
 ## 정본 두 개
 
