@@ -51,10 +51,10 @@ Templates live in `templates/` and are referenced by skills as `${CLAUDE_PLUGIN_
 
 ## Install
 
-Add this repository as a marketplace (replace `<owner>` with the GitHub account hosting it), then install the plugin from it:
+Add this repository as a marketplace, then install the plugin from it:
 
 ```
-/plugin marketplace add <owner>/mission
+/plugin marketplace add sudopark/mission
 /plugin install mission@mission
 ```
 
