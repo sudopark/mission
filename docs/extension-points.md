@@ -1,6 +1,6 @@
 # Host contracts and extension points
 
-This document is the single authority for what the `mission` plugin expects from the project that installs it (the host project). Every skill and template cites it instead of restating it. The plugin never names a host project, never hardcodes a host path, and never invokes host scripts. Everything project-bound is supplied by the host through the four contracts below.
+This document is the single authority for what the `mission` plugin expects from the project that installs it (the host project). Every skill and template cites it instead of restating it. The plugin never names a host project, never hardcodes a host path, and never invokes host scripts. Everything project-bound is supplied by the host through the five contracts below.
 
 ## Writing norms
 
@@ -43,6 +43,12 @@ Posting a report fires `report-posted`.
 The `control-brief` skill needs an environment with session-to-session messaging. Specifically, it needs two things: a way to look up another session's address, and one reserved name for the controlling session.
 
 This is an environment requirement, stated in the skill's preamble. It is not assumed anywhere else in the skill body. A host without this capability can still use every other skill in the plugin.
+
+## Visual check
+
+The contract is: a plan whose deliverable changes a screen appearance the user will judge by gets a visual confirmation (a mockup or equivalent) before approval.
+
+The means is the host's choice — an HTML mockup, a design tool, a screenshot harness. The opord skill runs the check before its dry run (opord §3-7), and the campaign skill points screen-appearance assumptions at it (campaign §2-5). When the host specifies no means, the skills skip those sentences and the plans still run.
 
 ## Host artifacts
 

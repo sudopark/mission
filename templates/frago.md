@@ -5,10 +5,10 @@ Posting: every issuance is recorded in full as an issue comment (history layer �
 ```
 FRAGO-<n>     Issued by: agent | user   Time:   Approval: prior | after the fact
 Reason:      contingency <X> / assumption A-<n> collapsed / immediate report <FFIR-n> / plan gap / adjacent-DP encroachment notice received
-Items changed: 3-c T-<n> / appendix B commit <n>
+Items changed: section 2 K-<n> / T-<n> / appendix B commit <n>
 Change:      before → after
 Unchanged:   everything else
 Escalation:  none / request to re-review campaign.md <item>
 ```
 
-If the intent (3-a) changes, it is a rewrite, not a change directive.
+If ■ Core's `Why`, `What`, or `End state` changes, it is a rewrite, not a change directive. `How` (the core change and the unit composition) is updated by change directive.

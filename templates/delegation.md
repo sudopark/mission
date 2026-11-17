@@ -1,6 +1,6 @@
 # Delegation Rules — defaults
 
-campaign.md item 15 and work instruction 3-d inherit this table and may only narrow it. Adjustments after measuring actual use are made by revising this file.
+campaign.md item 15 and work instruction section 3 inherit this table and may only narrow it. Adjustments after measuring actual use are made by revising this file.
 
 ## Decision authority table
 
