@@ -29,7 +29,7 @@ The first line is a one-sentence gist. The user on the receiving end sees only t
 [Control gates, re-announced] Before plan approval, before PR creation and merge, and before any report is shown to the user, always pass through the controlling session.
 
 1. plan-review before approval — drafts and revisions of strategy, campaign, and opord go to the controlling session for first review before the user's approval. Only a pass goes on to approval. The authoring session obtains the approval from the user directly.
-2. PR review before merge — once the PR is up, request review from the controlling session before merging. Merge only on a pass.
+2. PR review before merge — once the PR is up, request review from the controlling session before merging. Merge only on a pass. If the user directly instructs merging before review, that instruction exempts this gate.
 3. Report review before output — a message that stops and hands over to the user (completion report, decision request, analysis result) goes to the controlling session as a draft under a `[Report review]` header before it is shown. Show it to the user only on a pass. A one-line progress note and an immediate answer to a user question are not covered. The criteria, and the attachments to put in the request, are in `${CLAUDE_PLUGIN_ROOT}/skills/report-review/SKILL.md` §1 and §2 — read it before writing.
    Commit messages and PR bodies are the same — before creating the PR, send all of the branch's commit messages and the draft body under a `[PR copy review]` header, and raise the PR only on a pass (attachments and criteria are in §1 and §2-1 of the same file).
 
